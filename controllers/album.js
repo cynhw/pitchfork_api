@@ -16,7 +16,7 @@ router.route('/')
 		});
 	});
 
-router.route('/:year')
+router.route('/year/:year')
 	.get(function(req, res) {
 		Album.find({year: req.params.year}, function(err, albums) {
 			if(err) return res.status(500).send(err);
@@ -24,7 +24,7 @@ router.route('/:year')
 		});
 	});
 
-router.route('/:id')
+router.route('/album/:id')
 	.get(function(req, res) {
 		Album.findById(req.params.id, function(err, album) {
 			if (err) return res.status(500).send(err);
@@ -34,6 +34,12 @@ router.route('/:id')
 	.put(function(req, res) {
 		Album.findByIdAndUpdate(req.params.id, {$set: {comment: req.body.comment}} , function(err) {
 			if (err) return res.status(500).send(err);
+			res.send({'message': 'success'});
+		});
+	})
+	.delete(function(req, res) {
+		Album.findByIdAndRemove(req.params.id, function(err) {
+			if(err) return res.status(500).send(err);
 			res.send({'message': 'success'});
 		});
 	})
