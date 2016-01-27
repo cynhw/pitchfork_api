@@ -1,26 +1,29 @@
+
+<div class="col-md-8 col-md-offset-2">
 <h1>New Album</h1>
 
-<form ng-submit="newAlbum()">
+<form ng-submit="newAlbum()" class="album-form">
   <div class="form-group">
     <label for="artist">Artist</label>
-    <input type="text" class="form-control" id="artist" ng-model="album.artist">
+    <input type="text" class="input-control" id="artist" ng-model="album.artist">
   </div>
   <div class="form-group">
     <label for="albumTitle">Album Title</label>
-    <input type="text" class="form-control" id="albumTitle" ng-model="albumalbumTitle"></textarea>
+    <input type="text" class="input-control" id="albumTitle" ng-model="album.albumTitle"></textarea>
   </div>
   <div class="form-group">
     <label for="rank">Rank</label>
-    <textarea class="form-control" id="rank" ng-model="album.rank"></textarea>
+    <input type="text" class="input-control" id="rank" ng-model="album.rank"></textarea>
   </div>
   <div class="form-group">
     <label for="year">Year</label>
-    <textarea class="form-control" id="year" ng-model="album.year"></textarea>
+    <input type="text" class="input-control" id="year" ng-model="album.year"></textarea>
   </div>
   <div class="form-group">
     <label for="image">Image Link</label>
-    <input type="url" class="form-control" id="image" placeholder="" ng-model="album.image">
+    <input type="url" class="input-control" id="image" placeholder="" ng-model="album.image">
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="button">Submit</button>
 </form>
+</div>

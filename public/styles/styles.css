@@ -1,7 +1,8 @@
 body {
 
-	background-color: #061d5a;
+	background-color: #123456;
 	color: white;
+	font-size: 3em;
 }
 
 
@@ -11,17 +12,59 @@ body {
 
 h1 {
 	font-size: 120px;
-	font-weight: 900;
+	font-weight: 700;
 }
 
 .albums {
 	font-size: 50px;
 	letter-spacing: -2px;
-	font-weight: 600;
+	font-weight: 200;
 	line-height: 45px;
 }
 
 .main {
 	border: 0;	
 	border-radius: 0;
+	font-family: 'Avenir Next', sans-serif;
+}
+
+.input-control {
+	background-color: transparent;
+	border: 0px;
+	border-bottom: 1px solid white;
+	width: 100%;
+	font-family: 'Avenir Next';
+	font-size: 16px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	height: 40px;
+}
+
+.album-form {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Avenir Next';
+}
+
+label {
+	font-weight: 200;
+	letter-spacing: 10px;
+}
+
+.button {
+	border-radius: 50px;
+	width: 100%;
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	margin-top: 20px;
+	font-size: 12px;
+	height: 50px;
+	font-family: 'Avenir Next';
+	font-size: 18px;
+}
+
+.button:hover {
+	color: #00e5e5;
+	border: 1px solid #00e5e5;
 }
