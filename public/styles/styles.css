@@ -1,0 +1,27 @@
+body {
+
+	background-color: #061d5a;
+	color: white;
+}
+
+
+.content {
+	margin: 30px auto;
+}
+
+h1 {
+	font-size: 120px;
+	font-weight: 900;
+}
+
+.albums {
+	font-size: 50px;
+	letter-spacing: -2px;
+	font-weight: 600;
+	line-height: 45px;
+}
+
+.main {
+	border: 0;	
+	border-radius: 0;
+}

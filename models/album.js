@@ -6,6 +6,7 @@ var AlbumSchema = new mongoose.Schema({
 	albumTitle: String,
 	trackTitle: String,
 	rank: Number,
+	image: String,
 	comment: String
 });
 

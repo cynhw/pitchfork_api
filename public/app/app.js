@@ -1,17 +1,18 @@
-var app = angular.module('AlbumApp', ['ngRoute']);
+var app = angular.module('AlbumApp', ['ngRoute', 'AlbumCtrls']);
 
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
 	.when('/', {
-		templateUrl: 'app/views/albums.html'
+		templateUrl: 'app/views/albums.html',
+		controller: 'HomeCtrl'
 	})
-	.when('/:year', {
+	.when('/year/:year', {
 		templateUrl: 'app/views/show-year.html'
 	})
-	.when('/:id', {
+	.when('/album/:id', {
 		templateUrl: 'app/views/show-album.html'
 	})
-	otherwise({
+	.otherwise({
 		templateUrl: 'app/views/404.html'
 	});
 
