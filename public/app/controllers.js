@@ -7,3 +7,21 @@ angular.module('AlbumCtrls', ['AlbumServices'])
 			$scope.results = results;
 		});
 	}])
+.controller('NewCtrl', ['$scope','$location', 'Album', function($scope, $location, Album) {
+	$scope.album = {
+		artist: '',
+		albumTitle: '',
+		year: '',
+		rank: '',
+		image: ''
+	};
+
+	$scope.newAlbum = function() {
+		Album.save($scope.album, function success(data) {
+			$location.path('/');
+		}, function error(data) {
+			console.log(data);
+		});
+	}
+
+}])
