@@ -9,6 +9,10 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	.when('/year/:year', {
 		templateUrl: 'app/views/show-year.html'
 	})
+	.when('/album/new', {
+		templateUrl: 'app/views/newAlbum.html',
+		controller: 'NewCtrl'
+	})
 	.when('/album/:id', {
 		templateUrl: 'app/views/show-album.html'
 	})
